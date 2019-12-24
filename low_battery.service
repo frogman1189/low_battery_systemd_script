@@ -1,0 +1,4 @@
+[Service]
+ExecStart=/usr/lib/systemd/system/low_battery.d/low_battery.sh
+User=video
+Group=video

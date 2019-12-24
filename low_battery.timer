@@ -1,0 +1,8 @@
+[Unit]
+Description=Low battery monitor run on boot
+
+[Timer]
+OnBootSec=1min
+
+[Install]
+WantedBy=timers.target
