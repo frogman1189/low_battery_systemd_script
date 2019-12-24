@@ -8,7 +8,7 @@ script_dir=$(dirname -- "$readlink -f -- "$BASH_SOURCE")")
 
 /bin/echo "copying ${files[@]} to $dest"
 
-for file in $files
+for file in ${files[@]}
 do
 	/bin/cp -r "$file" "$dest"
 done

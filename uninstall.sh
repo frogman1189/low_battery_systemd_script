@@ -8,7 +8,7 @@ script_dir=$(dirname -- "$readlink -f -- "$BASH_SOURCE")")
 
 /bin/echo "removing ${files[@]} from $dest"
 
-for file in $files
+for file in ${files[@]}
 do
 	# check before each removal. There should only be 4 files (low_battery.d 
 	# contains low_battery.sh), and it feels safer to have this safeguard.
